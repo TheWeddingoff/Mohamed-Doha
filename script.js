@@ -80,10 +80,6 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var rsvpInput = document.getElementById('attendance-value');
-    if (rsvpInput && !rsvpInput.value) {
-      alert('Please let us know if you can join us by selecting an option above.');
-      return;
-    }
     if (!emailReady) {
       if (status) {
         status.textContent = 'Email service failed to load. Please refresh and try again.';
